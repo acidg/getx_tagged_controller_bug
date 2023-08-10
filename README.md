@@ -9,8 +9,8 @@ Minimal example to reproduce the controller injection bug
 3. Open the project with Android Studio.
 
 ## Bug description
-Expected:
+### Expected
 When switching between pages using the navigation bar at the bottom, the pages switches to the other counter named "Page2Counter".
 
-Actual:
+### Actual
 A red error page appears displaying an assertion error, which shows that the controller for page 2 is not loaded correctly.
