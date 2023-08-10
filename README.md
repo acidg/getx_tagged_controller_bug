@@ -4,13 +4,13 @@ Minimal example to reproduce the controller injection bug
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Install Android Studio, Flutter, Dart-SDK and add the flutter plugin to Android Studio.
+2. Run `flutter pub get` inside this repository to install dependencies.
+3. Open the project with Android Studio.
 
-A few resources to get you started if this is your first Flutter project:
+## Bug description
+Expected:
+When switching between pages using the navigation bar at the bottom, the pages switches to the other counter named "Page2Counter".
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Actual:
+A red error page appears displaying an assertion error, which shows that the controller for page 2 is not loaded correctly.
