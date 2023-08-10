@@ -10,7 +10,7 @@ Minimal example to reproduce the controller injection bug
 
 ## Bug description
 ### Expected
-When switching between pages using the navigation bar at the bottom, the pages switches to the other counter named "Page2Counter".
+When switching between pages using the navigation bar at the bottom, the pages switch and the other counter named "Page2Counter" is displayed.
 
 ### Actual
 A red error page appears displaying an assertion error, which shows that the controller for page 2 is not loaded correctly.
